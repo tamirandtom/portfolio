@@ -1,0 +1,83 @@
+<!doctype html>
+<html ng-app="ngApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Untitled Angular App</title>
+    <meta name="description" content="Untitled Angular App">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, user-scalable=no">
+
+    <!-- OG data -->
+    <meta property="og:url" content="TODO" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Untitled Angular App" />
+    <meta property="og:site_name" content="Untitled Angular App" />
+    <meta property="og:description" content="Untitled Angular App" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:url" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Reset css -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <!-- material font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body id="top" ng-controller="index">
+
+    <div id="page" ng-class="{'page-preload':(!isPageLoaded)}">
+        <div class="wrap-out">
+        <div class="wrap">
+
+            <div ng-repeat="line in lines">
+                <h1 ng-if="line.class == 'h1'">{{line.text}}</h1>
+                <h2 ng-if="line.class == 'h2'">{{line.text}}</h2>
+                <h3 ng-if="line.class == 'p'">{{line.text}}</h3>
+                <div class="list-title" ng-if="line.class == 'h3'"> 
+                    <div class="list-line-icon">{{line.text}}</div>
+                </div>
+
+                <div class="list-line" ng-if="line.class == 'a'">
+                    <div class="list-line-icon">🔗</div>
+                    <a href="{{line.link}}" class="list-line-text">{{line.text}}</a>
+                </div>
+
+
+              
+            </div>
+           
+
+
+
+
+    </div>
+
+
+        </div> 
+    </div>
+
+    <!--Vendor: AngularJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-sanitize.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/angular-animate.js"></script>
+
+    <!--App file-->
+    <script src="js/app.js"></script>
+
+
+
+
+</body>
+
+</html>

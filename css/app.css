@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+
+
+@font-face {
+    font-family: "NB";
+    font-weight: 400;
+    src: url("Fonts/NarkissBlock-Regular.woff2");
+  }
+  
+  @font-face {
+    font-family: "NB";
+    font-weight: 900;
+    src: url("Fonts/NarkissBlock-Black.woff2");
+  }
+  
+  @font-face {
+    font-family: "NB";
+    font-weight: 700;
+    src: url("Fonts/NarkissBlock-Bold.woff2");
+  }
+  
+  .page-preload {
+    opacity: 0;
+}
+#page {
+    transition: all .3s linear;
+}
+
+html,
+body {
+    font-family: 
+    NB,
+    Roboto,
+    -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    font-size: 16px;
+    width: 100%;
+    color:#2A3E52;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+   line-height: 1.5;
+   -webkit-font-smoothing: antialiased;
+   direction: rtl;
+}
+
+body * {
+    box-sizing: border-box;
+}
+.wrap-out {
+margin: auto;
+}
+.wrap {
+padding: 20px;
+margin: auto;
+max-width: 640px;
+}
+h1 {
+    font-size: 44px;
+    font-weight: 900;
+}
+h2 {
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 700;
+}
+h2 a {
+    color:#4F8DF9;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+h2 a:hover {
+    color:#3F70C7;
+}
+.list-title  .list-line-icon {
+font-size: 44px;
+}
+.list-line-text {text-decoration: none; color:#2A3E52; transition: all .2s linear;}
+.list {margin-top: 66px;}
+.list-line, .list-title {display: flex;font-size: 22px; transition: all .2s linear; margin-top: 11px;}
+.list-title  {
+    margin-top: 44px;
+}
+.list-line:hover {background: #EDF3FE;}
+.list-line:hover .list-line-text {color: #4F8DF9;}
+.list-line-icon {margin-left: 22px;}
