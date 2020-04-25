@@ -4,19 +4,19 @@
 @font-face {
     font-family: "NB";
     font-weight: 400;
-    src: url("Fonts/NarkissBlock-Regular.woff2");
+    src: url("fonts/NarkissBlock-Regular.woff2");
   }
   
   @font-face {
     font-family: "NB";
     font-weight: 900;
-    src: url("Fonts/NarkissBlock-Black.woff2");
+    src: url("fonts/NarkissBlock-Black.woff2");
   }
   
   @font-face {
     font-family: "NB";
     font-weight: 700;
-    src: url("Fonts/NarkissBlock-Bold.woff2");
+    src: url("fonts/NarkissBlock-Bold.woff2");
   }
   
   .page-preload {
