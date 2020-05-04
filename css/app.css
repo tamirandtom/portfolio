@@ -73,17 +73,45 @@ h2 {
     font-size: 33px;
     line-height: 40px;
     font-weight: 700;
+    padding-right: 46px;
 }
 h2 a {
     color:#4F8DF9;
     text-decoration: none;
     transition: all .2s linear;
 }
+.chip {
+    padding: 4px;
+    background: #eee;
+    border-radius: 4px;
+    line-height: 16px;
+    color:#2A3E52;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: .3px;
+    font-size: 12px;
+    transition: all .2s linear;
+    display: inline-block;
+    margin-left: 4px;
+}
+.chip:hover {
+    color:#3F70C7;
+    background: #EDF3FE;
+}
+.social-block {
+        padding-right: 42px;
+        margin-top: 32px;
+}
+.bold {
+    font-weight: 700;
+}
 h2 a:hover {
     color:#3F70C7;
 }
 .list-title  .list-line-icon {
 font-size: 22px;
+position: relative;
+top:2px;
 }
 .list-line-text {text-decoration: none; color:#2A3E52; transition: all .2s linear;}
 .list {margin-top: 66px;}

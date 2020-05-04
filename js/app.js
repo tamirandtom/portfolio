@@ -11,10 +11,13 @@ function formatline(line) {
     } else if (line.startsWith("##")) {
         return {class:"h2",text:line.substring(2)};
     } else if (line.startsWith("#")) {
-        return {class:"h3",text:line.substring(1)};
+        return {class:"h3",icon:line.split(" ")[0].substring(1),text:line.substring(line.indexOf(" ") + 1)};
     } else if (line.startsWith("&")) {
         return {class:"a",link:line.substring(1).split('|')[1],text:line.substring(1).split('|')[0]};
-    } else {
+    } else if (line.startsWith("%%%%")) {
+        return {class:"social"};
+    }
+    else {
         return {class:"p",text:line};
 
     }
