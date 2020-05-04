@@ -122,3 +122,11 @@ top:2px;
 .list-line:hover {background: #EDF3FE;}
 .list-line:hover .list-line-text {color: #4F8DF9;}
 .list-line-icon {margin-left: 22px;}
+
+@media only screen and (max-width: 550px) {
+    .list-line, .list-title ,.list-title .list-line-icon{font-size: 15px;}
+    h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+  }
