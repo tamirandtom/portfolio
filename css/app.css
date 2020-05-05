@@ -66,14 +66,17 @@ margin: auto;
 max-width: 640px;
 }
 h1 {
-    font-size: 44px;
-    font-weight: 900;
-}
-h2 {
     font-size: 33px;
     line-height: 40px;
     font-weight: 700;
     padding-right: 46px;
+}
+h2 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-right: 46px;
+    margin-top: 24px;
 }
 h2 a {
     color:#4F8DF9;
